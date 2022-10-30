@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    /* border: red 3px solid; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+    object-fit: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    color: #905E96;
+    text-shadow: 2px 2px black;
+    font-size: 65px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 2px;
+    width: 850px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search {
+    padding: 11px 10px;
+    width: 500px;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 3px #905E96;
+    border: none;
+    border-radius: 15px;
+    font-size: 23px;
+    letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.togetherContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    /* border: black 3px solid; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.oneContainer {
+    display: flex;
+    flex-direction: column;
+    /* border: green 3px solid; */
+}
+
+.twoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    /* border: red 3px solid; */
+}
+
+.ingredientsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+}
+
+.pic {
+    width: 230px;
+    height: 230px;
+}
+
+li, p, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 33px;
+    color: #905E96;
+    text-shadow: 1.5px 1.5px black;
+}
+
+p {
+    font-size: 23px;
+    margin: 0;
+    color: #905E96;
+    text-shadow: 1px 1px black;
+}
+
+li {
+    color: #905E96;
+    text-shadow: 2px 2px black;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+span {
+    font-size: 35px;
 }
