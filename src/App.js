@@ -21,14 +21,12 @@ function App() {
         setMySearch('');
       }
       setRecipes(data.hits);
-      // console.log(data);
     }
     getResult();
   }, [wordSubmitted]);
 
   const myRecipeChange = (e) => {
     setMySearch(e.target.value);
-    // console.log(e.target.value);
   }
 
   const clickToSubmit = (e) => {
